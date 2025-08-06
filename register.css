@@ -1,0 +1,110 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('Screenshot\ 2024-11-30\ 193643.png');  /* Ensure you have the background image */
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card Container for Login and Register */
+.card {
+    background: rgba(255, 255, 255, 0.8);  /* Semi-transparent white */
+    border-radius: 10px;
+    padding: 10px;  /* Reduced padding for smaller card */
+    width: 100%;
+    max-width: 350px;  /* Smaller card width */
+    height: auto;  /* Adjust height automatically */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;  /* Start with the logo at top */
+}
+
+/* Logo and Name Styling */
+.card .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;  /* Space between logo and form */
+}
+
+.card .logo img {
+    width: 30px;  /* Smaller logo size */
+    height: auto;
+    margin-right: 8px;  /* Space between logo and name */
+}
+
+.card .logo h1 {
+    font-size: 18px;  /* Smaller title */
+    color: #4CAF50;  /* Green color */
+    margin: 0;
+}
+
+/* Title Styling */
+.card h2 {
+    color: #4CAF50;  /* Green color */
+    margin-bottom: 8px;  /* Reduced margin */
+    font-size: 16px;  /* Smaller font size for title */
+}
+
+/* Input Fields */
+input[type="text"], input[type="password"], input[type="email"], input[type="phone"] {
+    width: 100%;
+    padding: 6px;  /* Smaller padding for inputs */
+    margin: 4px 0;  /* Reduced margin between input fields */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;  /* Include padding in width */
+    background: #f4f4f4;
+    font-size: 14px;  /* Smaller font size for inputs */
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 6px;  /* Reduced padding for the button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+button:hover {
+    background-color: #45a049;  /* Darker green on hover */
+}
+
+/* Link Styling (Login/Register) */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Bottom Register/Login Link */
+.card p {
+    margin-top: 8px;  /* Reduced margin */
+    font-size: 12px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .card {
+        width: 80%;  /* Make the card width responsive on smaller screens */
+    }
+}

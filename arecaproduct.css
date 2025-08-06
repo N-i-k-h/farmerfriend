@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+:root {
+    --green: green;
+    --black: rgb(110, 108, 108);
+    --brown: brown;
+    --box-shadow: 0 .5rem 1.5rem rgb(202, 196, 196);
+    --border: .5rem solid rgb(221, 215, 215);
+    --outline: .1rem solid rgba(0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body {
+    background: #eee;
+    margin: 85px;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.heading {
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color: var(--black);
+}
+
+.heading span {
+    background: rgb(248, 105, 83);
+    display: inline-block;
+    color: white;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
+button {
+    border: .2rem solid var(--black);
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+button1 {
+    border: .2rem solid rgb(248, 105, 83);
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    color: rgb(252, 248, 245);
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--green);
+    color: #fff;
+}
+
+.btn1:hover {
+    background: rgb(248, 105, 83);
+    color: #fff;
+}
+
+.header {
+    border: 2px solid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: white;
+    box-shadow: var(--box-shadow);
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #373534;
+}
+
+.header.logo {
+    width: 25px;
+    height: 25px;
+}
+
+.header a {
+    color: rgb(54, 54, 54);
+}
+
+.header .logo i {
+    color: green;
+}
+
+.header .navbar a {
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: var(--black);
+}
+
+.header .navbar a:hover {
+    color: greenyellow;
+}
+
+.header .icons div {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color: black;
+    font-size: 2rem;
+    margin-right: .3rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.header .icons div:hover {
+    background: var(--green);
+    color: greenyellow;
+}
+
+#menu-btn {
+    display: none;
+}
+
+.header .search-form {
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    max-width: 50rem;
+    height: 5rem;
+    background: #fff;
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    transition: .7s linear;
+}
+
+.header .search-form.active {
+    right: 2rem;
+    transition: .7s linear;
+}
+
+.header .search-form input {
+    height: 100%;
+    width: 100%;
+    background: none;
+    text-transform: none;
+    font-size: 1.6rem;
+    width: 50rem;
+    padding: 0 1.5rem;
+}
+
+.header .search-form label {
+    font-size: 2.2rem;
+    padding-right: 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.header .search-form label:hover {
+    color: var(--green);
+}
+
+.header .login-form {
+    width: 35rem;
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    border-radius: .5rem;
+    background: #fff;
+    text-align: center;
+    transition: .7s linear;
+}
+
+.header .login-form h3 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--black);
+    text-decoration: underline;
+}
+
+.header .login-form .box {
+    width: 100%;
+    margin: .7rem 0;
+    background: #eee;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.header .login-form p {
+    font-size: 1.2rem;
+    font-weight: 100;
+    padding: .5rem 0;
+    color: var(--black);
+}
+
+.header .login-form p a {
+    color: var(--green);
+    text-decoration: underline;
+}
+
+.header .login-form.active {
+    right: 2rem;
+    transition: .7s linear;
+}
+
+.home {
+
+    display: flex;
+    justify-content: center;
+    background: url(assets/images/ind.webp);
+    background-size: cover;
+    padding-top: 28rem;
+    padding-bottom: 50rem;
+}
+
+.home .content {
+    text-align: center;
+    color: #fff;
+}
+
+.home .content h3 {
+    color: #fff;
+    font-size: 5rem;
+    text-decoration: underline;
+}
+
+.home .content h3 span {
+    color: rgb(246, 246, 246);
+}
+
+.home .content p {
+    color: whitesmoke;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+
+}
+
+.seperation {
+    height: 7px;
+    background-color: rgb(170, 169, 169);
+    position: relative;
+    z-index: 20;
+}
+
+.features .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.features .box-container .box {
+    padding: 3rem 2rem;
+    background: #fff;
+    outline: rgb(147, 141, 141);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+}
+.product-card-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* Five columns */
+    gap: 30px;
+    /* Increased spacing between cards */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.product-card {
+
+    background-color: rgb(232, 242, 243);
+    padding: 20px;
+    margin: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+.product-card:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.10);
+}
+section div span{
+    position: absolute;
+    top: 14px;
+    left: 13px;
+    background: red;
+    width: 300px;
+    height: 186px;
+    display: none;
+}
+section div span img{
+    width: 100%;
+    height: 100%;
+}
+section div:nth-child(1)>span.active{
+    animation: first 0.5s ease-in;
+    z-index: 2;
+    display: block;
+
+}
+section div:nth-child(2)>span.active{
+    animation: second 0.5s ease-in;
+    z-index: 2;
+    display: block;
+
+}
+section div:nth-child(3)>span.active{
+    animation: third 0.5s ease-in;
+    z-index: 2;
+    display: block;
+
+}
+section div:nth-child(4)>span.active{
+    animation: four 0.5s ease-in;
+    z-index: 2;
+    display: block;
+
+}
+@keyframes first{
+    to{
+        width: 30px;
+        height: 20px;
+        left: 1290px;
+        top: -70px;
+    }
+}
+@keyframes second{
+    to{
+        width: 30px;
+        height: 20px;
+        left: 948px;
+        top: -70px;
+    }
+}
+@keyframes third{
+    to{
+        width: 30px;
+        height: 20px;
+        left: 606px;
+        top: -70px;
+    }
+}
+@keyframes four{
+    to{
+        width: 30px;
+        height: 20px;
+        left: 265px;
+        top: -70px;
+    }
+}
+
+
+
+.select{
+    width: 60%;
+    height: 580px;
+    padding: 5%;
+    background: #141414;
+    position: absolute;
+    top: -1000px;
+    left: 20%;
+    transition: 0.5s;
+    overflow-y: auto;
+    margin: auto;
+}
+.select.display{
+    top: 10px;
+}
+.select div{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    padding: 5px;
+    border: 1px solid white;
+    position: relative;
+    margin: 5px auto;
+}
+.select div img{
+    width: 300px;
+    height: 100%;
+}
+.select div h1{
+    padding: 35px;
+    color: white;
+}
+.select div h2{
+    color: white;
+    padding: 45px;
+}
+.select div button{
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    color: rgb(0, 0, 0);
+}
+.select div button{
+    left: 60%;
+    top: 55%;
+}
+.select div span{
+    display: none;
+}
+.product-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to multiple rows if needed */
+            justify-content: space-around; /* Distribute cards evenly */
+            padding: 20px
+}

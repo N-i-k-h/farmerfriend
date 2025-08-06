@@ -1,0 +1,227 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  .header{
+    border: 2px solid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: white;
+    box-shadow: var(--box-shadow);
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #373534;
+}
+.header.logo{
+    width: 25px;
+    height: 25px;
+}
+.header a{
+    color: rgb(54, 54, 54);
+}
+.header .logo i{
+    color: green;
+}
+.header .navbar a{
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: var(--black);
+}
+.header .navbar a:hover{
+   color: greenyellow;
+}
+.header .icons div{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color: var(--black);
+    font-size: 2rem;
+    margin-right: .3rem;
+    text-align: center;
+    cursor: pointer;
+}
+.header .icons div:hover{
+    background: var(--green);
+    color: greenyellow;
+}
+#menu-btn{
+    display: none;
+}
+.header .search-form{
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    max-width: 50rem;
+    height: 5rem;
+    background: #fff;
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    transition: .7s linear;
+}
+.header .search-form.active{
+    right: 2rem;
+    transition: .7s linear;
+}
+.header .search-form input{
+    height: 100%;
+    width: 100%;
+    background: none;
+    text-transform: none;
+    font-size: 1.6rem;
+    width: 50rem;
+    padding: 0 1.5rem;
+}
+.header .search-form label{
+    font-size: 2.2rem;
+    padding-right: 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+.header .search-form label:hover{
+    color: var(--green);
+}
+.header .login-form{
+    width: 35rem;
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    border-radius: .5rem;
+    background: #fff;
+    text-align: center;
+    transition: .7s linear;
+}
+.header .login-form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--black);
+    text-decoration: underline;
+}
+.header .login-form .box{
+    width: 100%;
+    margin: .7rem 0;
+    background: #eee;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+}
+.header .login-form p{
+    font-size: 1.2rem;
+    font-weight: 100;
+    padding: .5rem 0;
+    color: var(--black);
+}
+.header .login-form p a{
+    color: var(--green);
+    text-decoration: underline;
+}
+.header .login-form.active{
+    right: 2rem;
+    transition: .7s linear;
+}
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2.5em;
+    color: #2c6b2f;
+  }
+  
+  h2 {
+    font-size: 1.8em;
+    color: #2c6b2f;
+    margin-top: 40px;
+  }
+  
+  h3 {
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 20px;
+  }
+  
+  ul, ol {
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  strong {
+    color: #2c6b2f;
+  }
+  
+  /* Container */
+  .container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Image Styling */
+  .image-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .disease-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Disease Info Section Styling */
+  .disease-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+    }
+  
+    h1 {
+      font-size: 2em;
+    }
+  
+    h2 {
+      font-size: 1.5em;
+    }
+  
+    h3 {
+      font-size: 1.1em;
+    }
+  
+    .disease-image {
+      width: 90%;
+      max-width: none;
+    }
+  }
+  

@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+:root{
+    --green: green;
+    --black: rgb(110, 108, 108);
+    --brown: brown;
+    --box-shadow: 0 .5rem 1.5rem rgb(202, 196, 196);
+    --border: .5rem solid rgb(221, 215, 215);
+    --outline: .1rem solid rgba(0,0,0.1);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+body{
+    background: #eee;
+}
+section{
+    padding: 2rem 9%;
+}
+.heading{
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color: var(--black);
+}
+.heading span{
+    background: rgb(248, 105, 83);
+    display: inline-block;
+    color: white;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%,7% 50%,0% 0%);
+}
+.btn{
+    border: .2rem solid var(--black);
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+.btn1{
+    border: .2rem solid rgb(248, 105, 83);
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    color: rgb(252, 248, 245);
+    cursor: pointer;
+}
+.btn:hover{
+    background: var(--green);
+    color: #fff;
+}
+.btn1:hover{
+    background: rgb(248, 105, 83);
+    color: #fff;
+}
+.header{
+    border: 2px solid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: white;
+    box-shadow: var(--box-shadow);
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #373534;
+}
+.header.logo{
+    width: 25px;
+    height: 25px;
+}
+.header a{
+    color: rgb(54, 54, 54);
+}
+.header .logo i{
+    color: green;
+}
+.header .navbar a{
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: var(--black);
+}
+.header .navbar a:hover{
+   color: greenyellow;
+}
+.header .icons div{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color: var(--black);
+    font-size: 2rem;
+    margin-right: .3rem;
+    text-align: center;
+    cursor: pointer;
+}
+.header .icons div:hover{
+    background: var(--green);
+    color: greenyellow;
+}
+#menu-btn{
+    display: none;
+}
+.header .search-form{
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    max-width: 50rem;
+    height: 5rem;
+    background: #fff;
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    transition: .7s linear;
+}
+.header .search-form.active{
+    right: 2rem;
+    transition: .7s linear;
+}
+.header .search-form input{
+    height: 100%;
+    width: 100%;
+    background: none;
+    text-transform: none;
+    font-size: 1.6rem;
+    width: 50rem;
+    padding: 0 1.5rem;
+}
+.header .search-form label{
+    font-size: 2.2rem;
+    padding-right: 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+.header .search-form label:hover{
+    color: var(--green);
+}
+.header .login-form{
+    width: 35rem;
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    border-radius: .5rem;
+    background: #fff;
+    text-align: center;
+    transition: .7s linear;
+}
+.header .login-form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--black);
+    text-decoration: underline;
+}
+.header .login-form .box{
+    width: 100%;
+    margin: .7rem 0;
+    background: #eee;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+}
+.header .login-form p{
+    font-size: 1.2rem;
+    font-weight: 100;
+    padding: .5rem 0;
+    color: var(--black);
+}
+.header .login-form p a{
+    color: var(--green);
+    text-decoration: underline;
+}
+.header .login-form.active{
+    right: 2rem;
+    transition: .7s linear;
+}
+.home{
+
+    display: flex;
+    justify-content: center;
+    background: url(aman.jpg);
+    background-size: cover;
+    padding-top: 28rem;
+    padding-bottom: 50rem;
+}
+.home .content{
+    text-align: center;
+    color: #fff;
+}
+.home .content h3{
+    color: #fff;
+    font-size: 5rem;
+    text-decoration: underline;
+}
+.home .content h3 span{
+    color: rgb(246, 246, 246);
+}
+.home .content p{
+    color: whitesmoke;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+
+}
+.seperation{
+    height: 7px;
+    background-color: rgb(170, 169, 169);
+    position: relative;
+    z-index: 20;
+}
+.features .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+.features .box-container .box{
+    padding: 3rem 2rem;
+    background: #fff;
+    outline: rgb(147, 141, 141);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+}
+
+.features .box:hover{
+    box-shadow: 1px 1px 10px 4px solid var(--green);
+
+}
+.features .box-container .box img{
+    margin: 1rem 0;
+    height: 20rem;
+}
+.features .box-container .box h3{
+    font-size: 2.5rem;
+    line-height: 1.8;
+    color: var(--black);
+    text-decoration: underline;
+}
+.features .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--black);
+    padding: 1rem 0;
+}
+.products .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+.products .box-container .box{
+    padding: 3rem 2rem;
+    background: #fff;
+    outline: rgb(147, 141, 141);
+    outline-offset: -1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.products .box-container .box:hover{
+    box-shadow: 1px 1px 10px 4px solid var(--green);
+    box-shadow: -10px -1rem 2rem 8px rgb(158, 160, 157);
+}
+.products .box-container .box img{
+    margin: 1rem 0;
+    height: 20rem;
+}
+.products .box-container .box h3{
+    font-size: 2.5rem;
+    line-height: 1.8;
+    color: var(--black);
+    text-decoration: underline;
+}
+.products .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--black);
+    padding: 1rem 0;
+}
+.footer{
+    background: #fff;
+    padding: 20px 0;
+}
+.footer .box-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr 2fr 2fr;
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+}
+.footer .box-container .box a{
+    font-size: 2rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+.footer .box-container .box h3 i{
+    color: var(--green);
+    text-decoration: underline;
+}
+.footer .box-container .box {
+    display: block;
+    font-size: 1.5rem;
+    color: gray;
+    padding: 1rem 0;
+}
+.footer .box-container .box .links{
+    line-height: 1.8;
+    font-size: 1.5rem;
+    color: gray;
+    padding: 1rem 0;
+}
+.footer .box-container .box .links {
+    color: var(--green);
+    padding-right: 5rem;
+}
+.footer .box-container .box .links:hover {
+    padding-right: 5rem;
+}
+.footer .box-container .box .share a{
+    height: 4rem;
+    width: 4rem;
+    line-height: 2rem;
+    border-radius: .5rem;
+    font-size: 2.5rem;
+    color: var(--black);
+    margin-left: .2rem;
+    background: #eee;
+    text-align: center;
+}
+.footer .box-container .box .share a:hover{
+    background: var(--green);
+    color: white;
+}
+.footer .box-container .box h3{
+    text-decoration: underline;
+}
+.credit{
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    padding: 2.5rem;
+    font-size: 2rem;
+    color: var(--black);
+    border-top: var(--border);
+    background-color: #fff;
+}
+.footer .box-container .box .shares{
+    line-height: 1.8;
+    font-size: 1.5rem;
+    color: gray;
+    padding: 1rem 0;
+}
+.footer .box-container .box .shares:hover{
+    padding-right: 2rem;
+}
+
+.logo img{
+    height: 50px;
+    width: 50px;
+}
+.main{
+    margin: 0px;
+    padding: 0px;
+}

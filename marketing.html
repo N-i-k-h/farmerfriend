@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vegetable Price Analysis</title>
+  <link rel="stylesheet" href="marketing.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <header class="header">
+    <a href="e" class="logo"><i class="fa fa-wheat" aria-hidden="true"></i>FARMER FRIEND</a>
+
+    <nav class="navbar">
+        <a href="success.html">Home</a>
+        <a href="features">Features</a>
+        <a href="Products">Products</a>
+        <a href="contact us">Contact us</a>
+    </nav>
+    <div class="icons">
+        <div class="fa fa-bars" id="menu-btn"></div>
+        <div class="fa fa-search" id="search-btn"></div>
+        <div class="fa fa-shopping-cart" id="cart-btn"></div>
+    
+    </div>
+
+    <form class="search-form">
+        <input type="search" id="search-box" placeholder="Search here....">
+        <label for="search-box" class="fa fa-search "></label>
+    </form>
+
+
+
+   
+</header>
+  <div class="container">
+    <h1>Arecanut Price Analysis Dashboard</h1>
+    <div class="filters">
+      <label for="filter">Filter:</label>
+      <select id="filter">
+        <option value="all">All</option>
+        <option value="Saraku">Saraku</option>
+        <option value="Bette">Bette</option>
+        <option value="Raashi">Raashi</option>
+        <option value="Gorublu">Gorublu</option>
+      </select>
+    </div>
+    <div class="graph-container">
+      <canvas id="priceChart"></canvas>
+    </div>
+  </div>
+  <div class="table-container">
+    <h2>Price Dataset</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Saraku (₹/quintal)</th>
+          <th>Bette (₹/quintal)</th>
+          <th>Raashi (₹/quintal)</th>
+          <th>Gorublu (₹/quintal)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Nov 10</td>
+          <td>68000</td>
+          <td>50400</td>
+          <td>47500</td>
+          <td>30200</td>
+        </tr>
+        <tr>
+          <td>Nov 11</td>
+          <td>54000</td>
+          <td>54300</td>
+          <td>42069</td>
+          <td>30900</td>
+        </tr>
+        <tr>
+          <td>Nov 12</td>
+          <td>52100</td>
+          <td>46199</td>
+          <td>42069</td>
+          <td>30200</td>
+        </tr>
+        <tr>
+          <td>Nov 13</td>
+          <td>55100</td>
+          <td>47014</td>
+          <td>40869</td>
+          <td>30800</td>
+        </tr>
+        <tr>
+          <td>Nov 14</td>
+          <td>61600</td>
+          <td>55000</td>
+          <td>40569</td>
+          <td>30600</td>
+        </tr>
+        <tr>
+          <td>Nov 15</td>
+          <td>58009 </td>
+          <td>46899</td>
+          <td>41599</td>
+          <td>28199</td>
+        </tr>
+        <tr>
+          <td>Nov 16</td>
+          <td>52100</td>
+          <td>46199</td>
+          <td>42069</td>
+          <td>30200</td>
+        </tr>
+        <tr>
+          <td>Nov 17</td>
+          <td>51100</td>
+          <td>50100</td>
+          <td>40069</td>
+          <td>30600</td>
+        </tr>
+        <tr>
+          <td>Nov 18</td>
+          <td>58009</td>
+          <td>46899</td>
+          <td>41599</td>
+          <td>28199</td>
+        </tr>
+        <tr>
+          <td>Nov 19</td>
+          <td>52100</td>
+          <td>46199</td>
+          <td>42069</td>
+          <td>30200</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="price-predictor">
+    <h2>Average price</h2>
+    <div class="prediction-results">
+      <p>Saraku: <span id="Saraku-prediction">--</span> ₹/quintal</p>
+      <p>Bette: <span id="Bette-prediction">--</span> ₹/quintal</p>
+      <p>Raashi: <span id="Raashi-prediction">--</span> ₹/quintal</p>
+      <p>Gorublu: <span id="Gorublu-prediction">--</span> ₹/quintal</p>
+    </div>
+  </div>
+  <script src="marketing.js"></script>
+</body>
+</html>
