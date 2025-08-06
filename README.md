@@ -46,5 +46,5 @@ FarmerFriend is a modern full-stack web application that bridges the gap between
 
 ---
 
-## 📁 Project Structure
+
 
